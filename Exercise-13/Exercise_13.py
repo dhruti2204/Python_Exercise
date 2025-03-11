@@ -7,15 +7,15 @@ class Number:
     def get(self):
         return self.numbers 
     
-    def change_original_values(self, func: lambda x: x): 
+    def change_original_values(self, func): 
         new_numbers =  list(map(func, self.numbers)) 
         return new_numbers
     
-    def filter_values(self, filter_func: lambda x: x):
+    def filter_values(self, filter_func):
         filtered_numbers = list(filter(filter_func,self.numbers)) 
         return filtered_numbers 
     
-    def compound_the_numbers(self, reduce_func: lambda compound, d: compound + d): 
+    def compound_the_numbers(self, reduce_func): 
         compounded_value = reduce(reduce_func, self.numbers)
         return compounded_value
         
