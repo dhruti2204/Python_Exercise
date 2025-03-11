@@ -26,6 +26,8 @@ elif(operation == "C"):
             sum += numbers[i]
     print("sum of the odd numbers: ", sum)
 
+    
+
 elif(operation == "D"):
     lst1 = numbers
     lst2 = []
